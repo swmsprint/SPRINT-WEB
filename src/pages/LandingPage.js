@@ -12,7 +12,7 @@ const mainImageVariant = {
   },
 };
 
-const LandingPage = () => {
+const LandingPage = ({ openModal }) => {
   return (
     <div className="section overflow-hidden">
       <div className="w-full h-full grid grid-cols-4">
@@ -36,7 +36,7 @@ const LandingPage = () => {
             <br></br>
             <button
               className="ml-20 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-              onClick={() => {}} //
+              onClick={openModal}
             >
               사전예약 하러가기
             </button>
