@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 
-const Header = ({ page }) => {
+const Header = ({ page, openModal }) => {
   const exitVariant = {
     initial: {
       opacity: 0,
@@ -31,7 +31,7 @@ const Header = ({ page }) => {
             exit="exit"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
             style={{ right: 0, top: 90 }}
-            onClick={() => {}} // ToDo: 사전예약 모달창 띄우기
+            onClick={openModal} // ToDo: 사전예약 모달창 띄우기
           >
             사전예약 하러가기
           </motion.button>
