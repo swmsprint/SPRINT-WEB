@@ -22,24 +22,19 @@ const Header = ({ page }) => {
   return (
     <div className="flex justify-between fixed w-1/2 z-50 left-1/4 mt-16">
       <img src="/images/header_logo.png" alt="header logo" className="w-1/6" />
-      <div className="flex justify-around w-1/4">
-        <img src="/images/iconFacebook.png" alt="header facebook" />
-        <img src="/images/iconInstagram.png" alt="header instagram" />
-        <img src="/images/iconBlog.png" alt="header blog" />
-        <img src="/images/iconYoutube.png" alt="header youtube" />
-      </div>
       <AnimatePresence>
-        {page == "landing" ? null : (
-          <motion.p
+        {page == "LandingPage" ? null : (
+          <motion.button
             variants={exitVariant}
             initial="initial"
             animate="animate"
             exit="exit"
-            className="z-20 absolute w-56"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
             style={{ right: 0, top: 90 }}
+            onClick={() => {}} // ToDo: 사전예약 모달창 띄우기
           >
-            downloadbutton
-          </motion.p>
+            사전예약 하러가기
+          </motion.button>
         )}
       </AnimatePresence>
     </div>
