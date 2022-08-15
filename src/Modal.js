@@ -79,9 +79,9 @@ const Modal = ({ closeModal }) => {
                   </span>
                 </label>
               </div>
-              <div class="ml-5 mr-5 md:flex md:items-center mb-6">
+              <div class="md:flex md:items-center mb-6">
                 <div class="md:w-1/4"></div>
-                <label class="md:w-1/2 block text-gray-500 font-bold">
+                <label class="ml-5 mr-5 md:w-1/2 block text-gray-500 font-bold">
                   <input
                     class="mr-2 leading-tight"
                     type="checkbox"
