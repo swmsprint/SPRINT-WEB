@@ -20,7 +20,7 @@ const Modal = ({ closeModal }) => {
       alert("전화번호 수집에 동의해주세요.");
       return;
     }
-    if (number == "") {
+    if (number === "") {
       alert("전화번호를 입력해 주세요.");
       return;
     }

@@ -47,8 +47,8 @@ const Page1 = ({ page }) => {
         </motion.div>
       </div>
       <span className="z-20 absolute" style={{ bottom: 20, left: "50%" }}>
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
       </span>
     </div>
   );

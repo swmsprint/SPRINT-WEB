@@ -34,7 +34,7 @@ const Header = ({ page, openModal }) => {
           </span>
         </div>
         <AnimatePresence>
-          {page == "LandingPage" ? null : (
+          {page === "LandingPage" ? null : (
             <motion.button
               variants={exitVariant}
               initial="initial"

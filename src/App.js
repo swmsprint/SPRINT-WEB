@@ -3,7 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "fullpage.js/vendors/scrolloverflow";
 
 import Header from "./Header";
-import Landing_Page from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
@@ -45,7 +45,7 @@ function App() {
         render={({ state, fullpageApi }) => {
           return (
             <div>
-              <Landing_Page openModal={openModal} />
+              <LandingPage openModal={openModal} />
               <Page1 page={page} />
               <Page2 page={page} />
               <Page3 page={page} />
