@@ -15,7 +15,7 @@ const Page4 = ({ page }) => {
         },
         animate: {
           opacity: 1,
-          x: window.screen.width * 0.4,
+          x: window.screen.width * 0.35,
           transition: {
             delay: 0.3,
             duration: 1,
@@ -29,7 +29,7 @@ const Page4 = ({ page }) => {
         },
         animate: {
           opacity: 1,
-          x: window.screen.width * 0.1,
+          x: window.screen.width * 0.05,
           transition: {
             delay: 0.3,
             duration: 1,
@@ -46,11 +46,11 @@ const Page4 = ({ page }) => {
     <div className="section overflow-hidden">
       <div className="w-full h-full grid grid-cols-4">
         <div></div>
-        <motion.div className="col-span-2 z-20 mt-40 relative">
+        <motion.div className="col-span-2 z-20 mt-28 md:mt-40 relative">
           <motion.img
             src="/images/phone.png"
             alt="second people"
-            className="absolute w-54 md:w-85"
+            className="absolute w-5/6 md:w-1/3"
             style={{
               bottom: window.screen.height * 0.1,
               right: "80%",

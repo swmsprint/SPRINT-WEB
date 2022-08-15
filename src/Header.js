@@ -21,7 +21,7 @@ const Header = ({ page, openModal }) => {
 
   return (
     <div className="flex justify-center">
-      <div className="flex justify-between items-center fixed w-3/4 md:w-1/2 z-50 mt-16">
+      <div className="flex justify-between items-center fixed w-3/4 md:w-1/2 z-50 mt-8 md:mt-16">
         <div className="relative">
           <img
             src="/images/header_logo.png"
