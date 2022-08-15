@@ -8,6 +8,7 @@ import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
 import Modal from "./Modal";
+import Footer from "./Footer";
 
 function App() {
   const anchors = ["LandingPage", "Page1", "Page2", "Page3", "Page4"];
@@ -45,6 +46,7 @@ function App() {
           );
         }}
       />
+      <Footer />
     </div>
   );
 }
