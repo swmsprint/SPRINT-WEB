@@ -24,7 +24,7 @@ const Page1 = ({ page }) => {
     <div className="section overflow-hidden">
       <div className="w-full h-full grid grid-cols-4">
         <div></div>
-        <motion.div className="col-span-2 z-20 mt-40 relative">
+        <motion.div className="col-span-2 z-20 mt-28 md:mt-40 relative">
           <div className="w-full flex justify-between">
             <div className="md:mt-8 ml-0 mr-auto text-white">
               <h1 className="text-3xl md:text-8xl">
@@ -38,8 +38,8 @@ const Page1 = ({ page }) => {
           <motion.img
             src="/images/phone.png"
             alt="phone"
-            className="absolute w-54 md:w-85"
-            style={{ bottom: -window.screen.height * 0.3, right: 0 }}
+            className="absolute w-5/6 md:w-1/3"
+            style={{ bottom: -window.screen.height * 0.3, right: 10 }}
             variants={variants}
             initial="initial"
             animate="animate"

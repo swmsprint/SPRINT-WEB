@@ -36,7 +36,7 @@ const LandingPage = ({ openModal }) => {
           </motion.div>
         )}
         <div></div>
-        <div className="col-span-2 z-20 mt-40 relative flex justify-center md:justify-start">
+        <div className="col-span-2 z-20 mt-20 relative flex justify-center md:justify-start">
           <div className="text-white absolute top-1/3 ml-auto mr-auto">
             <h1 className="text-8xl">SPRINT</h1>
             <br></br>
