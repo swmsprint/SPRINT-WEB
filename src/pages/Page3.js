@@ -28,20 +28,22 @@ const Page3 = ({ page }) => {
           <motion.img
             src="/images/phone.png"
             alt="second people"
-            className="absolute h-4/5"
+            className="absolute w-54 md:w-85"
             style={{
               bottom: -window.screen.height * 0.3,
-              right: window.screen.width * 0.3,
             }}
             variants={variants}
             initial="initial"
             animate="animate"
           />
           <div className="w-full flex justify-between">
-            <div className="mt-8 ml-auto mr-0 text-black">
-              <h1 className="text-8xl">내용을</h1>
-              <h1 className="text-8xl">채워줘요</h1>
-              <p className="text-4xl">배가 고프네요</p>
+            <div className="md:mt-8 ml-0 mr-auto md:ml-auto md:mr-0 text-black">
+              <h1 className="text-3xl md:text-8xl">
+                스프린트의
+                <br />
+                장점
+              </h1>
+              <p className="text-base md:text-3xl md:mt-10">그리고 보충설명</p>
             </div>
           </div>
         </motion.div>
