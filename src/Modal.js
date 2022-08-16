@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
+import ReactGA from "react-ga";
 import { db } from "./lib/firebase_config";
 
 const Modal = ({ closeModal }) => {
@@ -28,13 +29,19 @@ const Modal = ({ closeModal }) => {
     const moivesCollRef = collection(db, "users");
     addDoc(moivesCollRef, { number, beta })
       .then((response) => {
-        console.log(response);
         alert("사전예약이 완료되었습니다! 곧 만나요!");
         closeModal();
+        ReactGA.event({
+          category: "Button",
+          action: "Succeeded Reservation",
+        });
       })
       .catch((error) => {
-        console.log(error);
         alert("오류가 발생했습니다. 다시 시도해주세요.");
+        ReactGA.event({
+          category: "Button",
+          action: "Failed Reservation",
+        });
       });
   };
 
