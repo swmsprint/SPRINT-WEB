@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "fullpage.js/vendors/scrolloverflow";
+import ReactGA from "react-ga";
 
 import Header from "./Header";
 import LandingPage from "./pages/LandingPage";
@@ -18,9 +19,17 @@ function App() {
 
   const openModal = () => {
     setShowModal(true);
+    ReactGA.event({
+      category: "Button",
+      action: "Open Modal",
+    });
   };
   const closeModal = () => {
     setShowModal(false);
+    ReactGA.event({
+      category: "Button",
+      action: "Close Modal",
+    });
   };
 
   return (
