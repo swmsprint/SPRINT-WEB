@@ -103,14 +103,14 @@ const Modal = ({ closeModal }) => {
             </form>
             <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
               <button
-                className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                className="text-indigo-500 background-transparent font-bold uppercase px-6 py-2 text-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 type="button"
                 onClick={closeModal}
               >
                 닫기
               </button>
               <button
-                className="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-md px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                className="bg-indigo-500 text-white active:bg-indigo-700 font-bold uppercase text-md px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 type="button"
                 onClick={handleSubmit}
               >
