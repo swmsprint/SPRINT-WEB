@@ -6,9 +6,6 @@ module.exports = {
       fontFamily: {
         Anton: ["Anton", "sans-serif"],
       },
-      spacing: {
-        "1/8": "12.5%",
-      },
     },
   },
   variants: {

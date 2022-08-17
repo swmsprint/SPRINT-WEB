@@ -28,23 +28,44 @@ const Header = ({ page, openModal }) => {
             alt="header logo"
             className="inline py-2 h-10 md:h-14 "
           />
-          <span className="text-white text-2xl md:text-4xl font-white font-Anton align-middle ">
-            {" "}
-            SPRINT
-          </span>
+          {page === "Page2" ? (
+            <span className="text-white text-2xl md:text-4xl text-indigo-500 font-Anton align-middle ">
+              {" "}
+              SPRINT
+            </span>
+          ) : (
+            <span className="text-white text-2xl md:text-4xl text-white font-Anton align-middle ">
+              {" "}
+              SPRINT
+            </span>
+          )}
         </div>
         <AnimatePresence>
-          {page === "LandingPage" ? null : (
+          {page === "LandingPage" ? null : page === "Page2" ? (
             <motion.button
               variants={exitVariant}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="bg-blue-500 hover:bg-blue-700 w-24 md:w-40 py-2 px-4 rounded-full"
+              className="bg-indigo-500 hover:bg-indigo-700 text-white w-24 md:w-40 py-2 px-4 rounded-full"
               style={{ right: 0, top: 90 }}
               onClick={openModal} // ToDo: 사전예약 모달창 띄우기
             >
-              <p className="text-white break-normal font-bold text-sm md:text-l">
+              <p className="break-normal font-bold text-sm md:text-l">
+                사전예약 하러가기
+              </p>
+            </motion.button>
+          ) : (
+            <motion.button
+              variants={exitVariant}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="bg-white hover:bg-gray-300 text-indigo-500 w-24 md:w-40 py-2 px-4 rounded-full"
+              style={{ right: 0, top: 90 }}
+              onClick={openModal} // ToDo: 사전예약 모달창 띄우기
+            >
+              <p className="break-normal font-bold text-sm md:text-l">
                 사전예약 하러가기
               </p>
             </motion.button>

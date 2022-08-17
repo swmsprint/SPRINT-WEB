@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .App {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "NanumSquareBold", sans-serif;
 }
 
 .Header {

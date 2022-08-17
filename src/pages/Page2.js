@@ -50,15 +50,19 @@ const Page2 = ({ page }) => {
           <div className="w-full flex justify-between">
             <div className="md:mt-8 ml-0 mr-auto text-black">
               <h1 className="text-3xl md:text-8xl">
-                스프린트의
+                하나하나
                 <br />
-                장점
+                체계적으로
               </h1>
-              <p className="text-base md:text-3xl md:mt-10">그리고 보충설명</p>
+              <p className="text-base md:text-3xl md:mt-10">
+                깔끔하고 직관적인
+                <br />
+                러닝 결과보고서
+              </p>
             </div>
           </div>
           <motion.img
-            src="/images/phone.png"
+            src="/images/Phone2_shadow.png"
             alt="phone"
             className="absolute w-5/6 md:w-1/3"
             style={{

@@ -41,11 +41,11 @@ function App() {
         navigation
         navigationTooltips={anchors}
         sectionsColor={[
-          "#8a3d39",
-          "#5050d4",
-          "#FFAC30",
-          "#DBCFFF",
-          "#2AC1BC",
+          "#5563DE",
+          "#FA7531",
+          "#F3F5FC",
+          "#5563DE",
+          "#FA7531",
           "#2F2F2F",
         ]}
         onLeave={(origin, destination, direction) => {
