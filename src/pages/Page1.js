@@ -6,7 +6,7 @@ const Page1 = ({ page }) => {
   const isMobile = useMediaQuery({
     query: "(max-width:767px)",
   });
-  
+
   const upVariants = {
     initial: {
       y: 0,
@@ -33,15 +33,19 @@ const Page1 = ({ page }) => {
           <div className="w-full flex justify-between">
             <div className="md:mt-8 ml-0 mr-auto text-white">
               <h1 className="text-3xl md:text-8xl">
-                스프린트의
+                끝까지
                 <br />
-                장점
+                최선을
               </h1>
-              <p className="text-base md:text-3xl md:mt-10">그리고 보충설명</p>
+              <p className="text-base md:text-3xl md:mt-10">
+                페이스메이커가 추천하는
+                <br />
+                최적의 페이스 추천
+              </p>
             </div>
           </div>
           <motion.img
-            src="/images/phone.png"
+            src="/images/Phone1.png"
             alt="phone"
             className="absolute w-5/6 md:w-1/3"
             style={
