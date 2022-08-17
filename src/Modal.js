@@ -26,8 +26,8 @@ const Modal = ({ closeModal }) => {
       return;
     }
 
-    const moivesCollRef = collection(db, "users");
-    addDoc(moivesCollRef, { number, beta })
+    const Reservation = collection(db, "users");
+    addDoc(Reservation, { number, beta })
       .then((response) => {
         alert("사전예약이 완료되었습니다! 곧 만나요!");
         closeModal();
