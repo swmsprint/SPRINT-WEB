@@ -39,7 +39,14 @@ function App() {
       <ReactFullpage
         anchors={anchors}
         navigation
-        navigationTooltips={anchors}
+        navigationTooltips={[
+          "",
+          "끝까지 최선을",
+          "하나하나 체계적으로",
+          "뒤쳐지지 않도록",
+          "매일매일 꾸준하게",
+          "",
+        ]}
         sectionsColor={[
           "#6c7af7",
           "#FA7531",
