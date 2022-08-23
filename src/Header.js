@@ -29,12 +29,12 @@ const Header = ({ page, openModal }) => {
             className="inline py-2 h-10 md:h-14 "
           />
           {page === "Page2" ? (
-            <span className="text-white text-2xl md:text-4xl text-indigo-500 font-Anton align-middle ">
+            <span className="text-2xl md:text-4xl text-indigo-500 font-Anton align-middle ">
               {" "}
               SPRINT
             </span>
           ) : (
-            <span className="text-white text-2xl md:text-4xl text-white font-Anton align-middle ">
+            <span className="text-2xl md:text-4xl text-white font-Anton align-middle ">
               {" "}
               SPRINT
             </span>
