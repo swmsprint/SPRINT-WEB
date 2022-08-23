@@ -32,12 +32,12 @@ const Page1 = ({ page }) => {
         <motion.div className="col-span-2 z-20 mt-28 md:mt-40 relative flex justify-center">
           <div className="w-full flex justify-between">
             <div className="md:mt-8 ml-0 mr-auto text-white">
-              <h1 className="text-3xl md:text-8xl">
+              <h1 className="text-3xl md:text-6xl">
                 끝까지
                 <br />
                 최선을
               </h1>
-              <p className="text-base md:text-3xl md:mt-10">
+              <p className="text-base md:text-2xl md:mt-10">
                 페이스메이커가 추천하는
                 <br />
                 최적의 페이스 추천
@@ -47,7 +47,7 @@ const Page1 = ({ page }) => {
           <motion.img
             src="/images/Phone1.png"
             alt="phone"
-            className="absolute w-5/6 md:w-1/3"
+            className="absolute h-1/2 md:h-5/6"
             style={
               isMobile
                 ? { bottom: -window.screen.height * 0.3 }

@@ -32,12 +32,12 @@ const Page3 = ({ page }) => {
         <motion.div className="col-span-2 z-20 mt-28 md:mt-40 relative flex justify-center">
           <div className="w-full flex justify-between">
             <div className="md:mt-8 ml-0 mr-auto md:ml-auto md:mr-0 text-white">
-              <h1 className="text-3xl md:text-8xl">
+              <h1 className="text-3xl md:text-6xl">
                 뒤쳐지지
                 <br />
                 않도록
               </h1>
-              <p className="text-base md:text-3xl md:mt-10">
+              <p className="text-base md:text-2xl md:mt-10">
                 오늘의 기록부터
                 <br />
                 친구들의 기록까지
@@ -47,7 +47,7 @@ const Page3 = ({ page }) => {
           <motion.img
             src="/images/Phone3.png"
             alt="phone"
-            className="absolute w-5/6 md:w-1/3"
+            className="absolute h-1/2 md:h-5/6"
             style={
               isMobile
                 ? { bottom: -window.screen.height * 0.3 }

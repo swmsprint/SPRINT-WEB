@@ -20,7 +20,6 @@ const LandingPage = ({ openModal }) => {
   return (
     <div className="section overflow-hidden">
       <div className="w-full h-full grid grid-cols-4">
-        <div className="absolute z-20 w-44" style={{ right: 0 }}></div>
         {isMobile ? null : (
           <motion.div
             className="absolute z-10 w-full h-full"
@@ -31,7 +30,7 @@ const LandingPage = ({ openModal }) => {
             <img
               src="/images/main.png"
               alt="main background"
-              className="w-full h-full"
+              className="h-full ml-40"
             />
           </motion.div>
         )}
