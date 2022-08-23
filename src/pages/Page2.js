@@ -15,7 +15,7 @@ const Page2 = ({ page }) => {
         },
         animate: {
           opacity: 1,
-          x: -window.screen.width * 0.35,
+          x: -window.screen.width * 0.3 + 10,
           transition: {
             delay: 0.3,
             duration: 1,
@@ -29,7 +29,7 @@ const Page2 = ({ page }) => {
         },
         animate: {
           opacity: 1,
-          x: -window.screen.width * 0.05,
+          x: -window.screen.width * 0.25,
           transition: {
             delay: 0.3,
             duration: 1,
@@ -46,15 +46,15 @@ const Page2 = ({ page }) => {
     <div className="section overflow-hidden">
       <div className="w-full h-full grid grid-cols-4">
         <div></div>
-        <motion.div className="col-span-2 z-20 mt-28 md:mt-40 relative">
+        <motion.div className="col-span-3 z-20 mt-28 md:mt-40 relative">
           <div className="w-full flex justify-between">
             <div className="md:mt-8 ml-0 mr-auto text-black">
-              <h1 className="text-3xl md:text-8xl">
+              <h1 className="text-3xl md:text-6xl">
                 하나하나
                 <br />
                 체계적으로
               </h1>
-              <p className="text-base md:text-3xl md:mt-10">
+              <p className="text-base md:text-2xl md:mt-10">
                 깔끔하고 직관적인
                 <br />
                 러닝 결과보고서
@@ -62,12 +62,12 @@ const Page2 = ({ page }) => {
             </div>
           </div>
           <motion.img
-            src="/images/Phone2_shadow.png"
+            src="/images/Phone2.png"
             alt="phone"
-            className="absolute w-5/6 md:w-1/3"
+            className="absolute h-1/2 md:h-5/6"
             style={{
               bottom: window.screen.height * 0.1,
-              left: "80%",
+              right: 10,
               opacity: 0,
             }}
             variants={variants}

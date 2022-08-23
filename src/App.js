@@ -41,7 +41,7 @@ function App() {
         navigation
         navigationTooltips={anchors}
         sectionsColor={[
-          "#5563DE",
+          "#6c7af7",
           "#FA7531",
           "#F3F5FC",
           "#5563DE",
